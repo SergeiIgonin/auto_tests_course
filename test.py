@@ -1,9 +1,7 @@
 #-------------------------------------------------------------------------------
 # Name:        Тестовое задание
 # Author:      Игонин Сергей
-# Created:     11/06/2022
-# Copyright:   (c) SergeiIgonin 2022
-# Licence:     <your licence>
+# Created:     11/09/2022
 #-------------------------------------------------------------------------------
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
