@@ -30,8 +30,10 @@ class TestUFO:
         browser.implicitly_wait(10)
         input_area = browser.find_element(By.CSS_SELECTOR, "div textarea")
         input_area.send_keys(f"{answer}")
+        
         #button = WebDriverWait(browser, 5).until
         #(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[class=submit-submission]")))
+        
         button = browser.find_element(By.CSS_SELECTOR, "button[class=submit-submission]")
         button.click()
         message = browser.find_element(By.CSS_SELECTOR, "div p[class=smart-hints__hint]")
