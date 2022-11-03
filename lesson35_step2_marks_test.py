@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 
 link = "http://selenium1py.pythonanywhere.com/"
 
-
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
@@ -13,9 +12,7 @@ def browser():
     print("\nquit browser..")
     browser.quit()
 
-
 class TestMainPage1():
-
     @pytest.mark.smoke
     def test_guest_should_see_login_link(self, browser):
         browser.get(link)
