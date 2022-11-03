@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-
 def test_abs1():
     try:
         link1 = "http://suninjuly.github.io/registration1.html"
@@ -23,7 +22,6 @@ def test_abs1():
         assert "Congratulations! You have successfully registered!" == welcome_text
     finally:
         browser.quit()
-
         
 def test_abs2():
     try:
@@ -45,6 +43,3 @@ def test_abs2():
         assert "Congratulations! You have successfully registered!" == welcome_text 
     finally:
         browser.quit()
-
-
-
