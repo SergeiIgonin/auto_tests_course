@@ -22,7 +22,6 @@ try:
             welcome_text_elt = browser.find_element(By.TAG_NAME, "h1")
             welcome_text = welcome_text_elt.text
             self.assertEqual("Congratulations! You have successfully registered!", welcome_text)
-
         
         def test_abs2(self):           
             link2 = "http://suninjuly.github.io/registration2.html"
@@ -45,7 +44,3 @@ try:
     
 finally:
     browser.quit()
-
-
-
-
