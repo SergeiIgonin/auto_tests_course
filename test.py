@@ -1,9 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name:        Тестовое задание
-# Purpose:     Трудоустройство =)
-#
 # Author:      Игонин Сергей
-#
 # Created:     11/06/2022
 # Copyright:   (c) SergeiIgonin 2022
 # Licence:     <your licence>
@@ -18,7 +15,7 @@ try:
     link1 = 'https://r7-office.ru/request_personal'
     browser = webdriver.Chrome()
     browser.get(link1)
-    time.sleep(2)
+    time.sleep(1)
     
     browser.execute_script("window.scrollTo(0, +350);")
     browser.implicitly_wait(1)
@@ -48,7 +45,7 @@ try:
 
     link2 = 'https://r7-office.ru/downloads#1_2'
     browser.get(link2)
-    time.sleep(2)
+    time.sleep(1)
 
     OS1 = browser.find_element(By.XPATH, "//a[contains(text(), 'Альт Линукс')]")
     OS2 = browser.find_element(By.XPATH, "//a[contains(text(), 'РОСА Линукс')]")  
@@ -61,4 +58,3 @@ try:
 finally:
     time.sleep(1)
     browser.quit()
-    #можно сделать все помедленнее и более презентабельно, добавив слипов между шагами.
